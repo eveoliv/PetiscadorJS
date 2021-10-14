@@ -28,15 +28,19 @@ function btnPesquisaProdutoComVariacao() {
 
 };
 
-//Botao ATUALIZAR PRODUTO
-function btnAtualizarProdutoEVariacoes() {
+//Botao ATUALIZAR PRODUTOS
+function btnAtualizarProdutos() {
 
   verificaDataToken();
+  atualizarProdutoPorId();    
+};
 
-  atualizarProdutoPorId();
+//Botao ATUALIZAR VARIACOES
+function btnAtualizarVariacoes() {
+
+  verificaDataToken();  
   atualizarVariacaoDeProdutoPorVariacaoId();
   criarNovaVariacaoDeProduto();
-
 };
 
 //BOTAO EXCLUIR VARIACAO
